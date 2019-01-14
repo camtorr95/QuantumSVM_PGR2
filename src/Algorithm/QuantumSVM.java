@@ -5,6 +5,8 @@
  */
 package Algorithm;
 
+import Data.SVMCharacter;
+import Data.TestingSet;
 import Data.TrainingSet;
 import Quantum.ComplexNumber;
 import Quantum.ComplexVectorSpaces;
@@ -26,12 +28,12 @@ public class QuantumSVM {
     }
 
     public static void classify() {
-//        for (SVMCharacter c : TestingSet.TESTING_SET) {
-//            System.out.println(String.format("El caracter es un: %d - (%.4f,%.4f)", (c.getLabel() < 0 ? 9 : 6), c.getHorizontal_ratio(), c.getVertical_ratio()));
-//            ComplexNumber[] final_state = run_circuit(c.get_arccot());
-//            measure(final_state);
-//            System.out.println("------");
-//        }
+        for (SVMCharacter c : TestingSet.TESTING_SET) {
+            System.out.println(String.format("El caracter es un: %d - (%.4f,%.4f)", (c.getLabel() < 0 ? 9 : 6), c.getHorizontal_ratio(), c.getVertical_ratio()));
+            ComplexNumber[] final_state = run_circuit(c.get_arccot());
+            measure(final_state);
+            System.out.println("------");
+        }
     }
 
     public static ComplexNumber[] run_circuit(double theta_x0) {

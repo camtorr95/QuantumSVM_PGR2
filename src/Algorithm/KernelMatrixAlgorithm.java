@@ -5,6 +5,7 @@
  */
 package Algorithm;
 
+import Data.TestingSet;
 import Data.TrainingSet;
 import Quantum.ComplexNumber;
 import Quantum.ComplexVectorSpaces;
@@ -18,7 +19,7 @@ public class KernelMatrixAlgorithm {
 
     public static void main(String[] args) {
         ComplexNumber[][] K = getKernelMatrix();
-        print_matrix(K);
+        print_matrix(Gates.matrix_exponential_i_pi_F_2());
     }
 
     public static ComplexNumber[][] getKernelMatrix() {
@@ -44,8 +45,6 @@ public class KernelMatrixAlgorithm {
 
         ComplexNumber[][] density_matrix = ComplexVectorSpaces.densityMatrix(three);
         ComplexNumber[][] partial_trace = ComplexVectorSpaces.partial_trace_4x4(density_matrix);
-
-        print_vector(three);
 
         return partial_trace;
     }
