@@ -47,6 +47,6 @@ El caracter es un: 6 - (0.9990,0.0250)
 El resultado de la clasificación es: 6
 ------
 
-Para mayor información leer el artículo del proyecto, Introducción a ML Cuántico.
+Para mayor información leer el artículo del proyecto, Introducción a Machine Learning Cuántico.
 
 Este proyecto es libre para todo tipo de uso.
