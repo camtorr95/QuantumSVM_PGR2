@@ -6,14 +6,6 @@ En este proyecto se implementa uno de los algoritmos cuánticos que se han desar
 
 Preferiblemente usar en netbeans, o crear un nuevo proyecto con la opción de fuentes existentes para ejecutar uno de los dos algoritmos principales, la fase de entrenamiento y la fase de clasificación, encontrados en el paquete src/Algorithm.
 
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
-
 ## Uso
 En el paquete src/Data, se encuentra la clase TestingSet que contiene los datos que se desean clasificar. El usuario puede agregar o quitar según lo desee, donde los parámetros son (ratio_horizontal, ratio_vertical, etiqueta(1 para 6, -1 para 9)).
 
